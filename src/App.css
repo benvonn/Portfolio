@@ -91,7 +91,15 @@ nav li {
 
 .header-content h1 {
   margin: 0;
+  padding-left: 2.3em;
+  display: flex;
   font-size: 2.5rem;
+}
+.header-content h3 {
+  margin: 0;
+  padding-left:10em;
+  display: flex;
+  font-size: 1.5rem;
 }
 
 /* Button Transform Effect (selected state) */

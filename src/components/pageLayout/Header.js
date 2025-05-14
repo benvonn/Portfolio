@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import openInNewTab from '../Logic/linkNewtab.js'
+import Insta from "../../assets/insta.png";
+import LinkedIn from "../../assets/linkedin.png";
+import LionDance from "../../assets/lion-dance.png";
 const Header = () => {
   // Separate states for each button
   const [selectedTab, setSelectedTab] = useState(null);
@@ -21,8 +24,8 @@ const Header = () => {
     </ul>),
     Contact: (
         <div>
-            <a onClick={() => openInNewTab('https://www.linkedin.com/in/bvonnied/')}><img src="src/Resource/images/linkedin-logo.png"></img></a>
-            <a onClick={() => openInNewTab('https://www.instagram.com/benlenvon/')}><img src="src/Resource/images/Insta-logo.png"></img></a>
+            <a onClick={() => openInNewTab('https://www.linkedin.com/in/bvonnied/')}><img src={Insta}></img></a>
+            <a onClick={() => openInNewTab('https://www.instagram.com/benlenvon/')}><img src={LinkedIn}></img></a>
             <p>Email: bvonnied@gmail.com</p>
         </div>
     )
@@ -43,7 +46,7 @@ const Header = () => {
             onClick={() => setSelectedTab(selectedTab === item ? null : item)}
             >
               {selectedTab === item ? (
-                <img src="src/Resource/images/lion-dance.png" alt="" />
+                <img src={LionDance} alt="☺" />
               ) : (
                 item
               )}
