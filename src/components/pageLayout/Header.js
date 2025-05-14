@@ -21,8 +21,8 @@ const Header = () => {
     </ul>),
     Contact: (
         <div>
-            <a onClick={() => openInNewTab('https://www.linkedin.com/in/bvonnied/')}><img src="public/Resource/images/linkedin-logo.png"></img></a>
-            <a onClick={() => openInNewTab('https://www.instagram.com/benlenvon/')}><img src="public/Resource/images/Insta-logo.png"></img></a>
+            <a onClick={() => openInNewTab('https://www.linkedin.com/in/bvonnied/')}><img src="src/Resource/images/linkedin-logo.png"></img></a>
+            <a onClick={() => openInNewTab('https://www.instagram.com/benlenvon/')}><img src="src/Resource/images/Insta-logo.png"></img></a>
             <p>Email: bvonnied@gmail.com</p>
         </div>
     )
@@ -43,7 +43,7 @@ const Header = () => {
             onClick={() => setSelectedTab(selectedTab === item ? null : item)}
             >
               {selectedTab === item ? (
-                <img src="/Resource/images/lion-dance.png" alt="" />
+                <img src="src/Resource/images/lion-dance.png" alt="" />
               ) : (
                 item
               )}
